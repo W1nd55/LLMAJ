@@ -1,0 +1,3 @@
+[submodule "EmergentTTS-Eval-public"]
+	path = EmergentTTS-Eval-public
+	url = https://github.com/W1nd55/EmergentTTS-Eval-public.git

@@ -1,0 +1,9 @@
+judge:
+  name: qwen2-audio
+  model_path: Qwen/Qwen2-Audio-7B-Instruct
+  device: cuda
+  dtype: bfloat16
+  generation:
+    temperature: 0
+    max_new_tokens: 16384
+    top_p: 0.9

@@ -1,7 +1,78 @@
+# --- Python ---
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 *.egg-info/
 dist/
 build/
+.eggs/
+*.so
+
+# --- Virtual envs ---
 .env
+.venv/
+venv/
+env/
+.test_env/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/
+nohup.out
+
+# --- Downloaded data (huge: audio, datasets, predictions) ---
+drive_data/
+EmergentTTSEvalResults/
+EmergentTTS-Eval-public/data/
+EmergentTTS-Eval-public/results/
+
+# --- Model checkpoints / weights ---
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.gguf
+*.h5
+*.pkl
+*.npy
+*.npz
+.cache/
+hf_cache/
+
+# --- Generated audio / large media ---
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.opus
+*.mp4
+*.mov
+
+# --- Run outputs ---
+# Ignore everything under judges/results/* but keep the dir itself + .gitkeep
+judges/results/*
+!judges/results/.gitkeep
+output/
+outputs/
+tmp/
+temp/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- pytest / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/

@@ -5,5 +5,5 @@ judge:
   dtype: bfloat16
   generation:
     temperature: 0
-    max_new_tokens: 16384
+    max_new_tokens: 768
     top_p: 0.9

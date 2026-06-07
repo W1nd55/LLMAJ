@@ -129,6 +129,10 @@ class Qwen2AudioJudge(BaseJudge):
         if temperature > 0:
             generate_kwargs["temperature"] = temperature
             generate_kwargs["top_p"] = top_p
+        else:
+            generate_kwargs["temperature"] = 1.0
+            generate_kwargs["top_p"] = 1.0
+            generate_kwargs["top_k"] = 0
 
         with torch.inference_mode():
             output_ids = self.model.generate(**inputs, **generate_kwargs)

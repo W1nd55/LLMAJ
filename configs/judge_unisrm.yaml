@@ -1,6 +1,6 @@
 judge:
-  name: qwen2-audio
-  model_path: Qwen/Qwen2-Audio-7B-Instruct
+  name: unisrm
+  model_path: /home/ubuntu/Project/LLMAJ/models/UniSRM
   device: cuda
   dtype: bfloat16
   generation:

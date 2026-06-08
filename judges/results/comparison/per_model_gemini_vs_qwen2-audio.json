@@ -1,0 +1,123 @@
+{
+  "judge_a": "gemini",
+  "judge_b": "qwen2-audio",
+  "shared_tts_models": [
+    "HumeAI",
+    "Qwen2.5-Omni-7B",
+    "Sesame1B",
+    "deepgram",
+    "eleven_multilingual_v2",
+    "gpt-4o-audio-preview-2024-12-17",
+    "gpt-4o-mini-tts",
+    "orpheus-tts-0.1-finetune-prod"
+  ],
+  "ranking_spearman_rho": 0.5773502691896257,
+  "ranking_spearman_p": 0.1339745962155613,
+  "ranking_kendall_w": 0.5,
+  "per_model": {
+    "HumeAI": {
+      "n_common": 200,
+      "n_aligned": 150,
+      "winrate_a": 0.44,
+      "winrate_b": 0.5133333333333333,
+      "winrate_diff": -0.0733333333333333,
+      "accuracy": 0.4866666666666667,
+      "cohen_kappa": 0.09666823087752219,
+      "weighted_kappa": 0.12961047914512247,
+      "pearson_r_other_score": -0.06307519024429184,
+      "pearson_r_baseline_score": 0.13766310765522172,
+      "kendall_w": 0.4535023778834615
+    },
+    "Qwen2.5-Omni-7B": {
+      "n_common": 200,
+      "n_aligned": 150,
+      "winrate_a": 0.29,
+      "winrate_b": 0.5133333333333333,
+      "winrate_diff": -0.22333333333333333,
+      "accuracy": 0.4533333333333333,
+      "cohen_kappa": 0.0391375673775487,
+      "weighted_kappa": -0.029668411867364686,
+      "pearson_r_other_score": -0.019258990304059417,
+      "pearson_r_baseline_score": 0.18495370543959497,
+      "kendall_w": 0.35375750033334813
+    },
+    "Sesame1B": {
+      "n_common": 200,
+      "n_aligned": 150,
+      "winrate_a": 0.11666666666666667,
+      "winrate_b": 0.5133333333333333,
+      "winrate_diff": -0.3966666666666666,
+      "accuracy": 0.47333333333333333,
+      "cohen_kappa": 0.01291128696376509,
+      "weighted_kappa": 0.030979298194097726,
+      "pearson_r_other_score": 0.013595413459918946,
+      "pearson_r_baseline_score": -0.04097312749340671,
+      "kendall_w": 0.2912702786790524
+    },
+    "deepgram": {
+      "n_common": 200,
+      "n_aligned": 150,
+      "winrate_a": 0.27666666666666667,
+      "winrate_b": 0.5133333333333333,
+      "winrate_diff": -0.23666666666666664,
+      "accuracy": 0.5266666666666666,
+      "cohen_kappa": 0.15870131921952768,
+      "weighted_kappa": 0.19510430483540353,
+      "pearson_r_other_score": -0.0010143006314351508,
+      "pearson_r_baseline_score": 0.10980382877956739,
+      "kendall_w": 0.45302013422818793
+    },
+    "eleven_multilingual_v2": {
+      "n_common": 200,
+      "n_aligned": 150,
+      "winrate_a": 0.37666666666666665,
+      "winrate_b": 0.5133333333333333,
+      "winrate_diff": -0.13666666666666666,
+      "accuracy": 0.5133333333333333,
+      "cohen_kappa": 0.16085523794926804,
+      "weighted_kappa": 0.10957412046618009,
+      "pearson_r_other_score": 0.010617322663486368,
+      "pearson_r_baseline_score": 0.14840582071337702,
+      "kendall_w": 0.4459598204364638
+    },
+    "gpt-4o-audio-preview-2024-12-17": {
+      "n_common": 200,
+      "n_aligned": 149,
+      "winrate_a": 0.6845637583892618,
+      "winrate_b": 0.5167785234899329,
+      "winrate_diff": 0.16778523489932884,
+      "accuracy": 0.4563758389261745,
+      "cohen_kappa": 0.019099479843953326,
+      "weighted_kappa": 0.07678289393755311,
+      "pearson_r_other_score": -0.04434118758020258,
+      "pearson_r_baseline_score": 0.12550812921637813,
+      "kendall_w": 0.39780654815889716
+    },
+    "gpt-4o-mini-tts": {
+      "n_common": 200,
+      "n_aligned": 150,
+      "winrate_a": 0.5966666666666667,
+      "winrate_b": 0.5133333333333333,
+      "winrate_diff": 0.08333333333333337,
+      "accuracy": 0.43333333333333335,
+      "cohen_kappa": 0.046158449913967226,
+      "weighted_kappa": 0.05063291139240511,
+      "pearson_r_other_score": -0.05245469996679074,
+      "pearson_r_baseline_score": 0.09806820518332837,
+      "kendall_w": 0.4217187430552469
+    },
+    "orpheus-tts-0.1-finetune-prod": {
+      "n_common": 200,
+      "n_aligned": 150,
+      "winrate_a": 0.33,
+      "winrate_b": 0.5133333333333333,
+      "winrate_diff": -0.1833333333333333,
+      "accuracy": 0.5333333333333333,
+      "cohen_kappa": 0.15845155085357066,
+      "weighted_kappa": 0.05908919834399695,
+      "pearson_r_other_score": 0.014074194157617376,
+      "pearson_r_baseline_score": 0.20335940651677412,
+      "kendall_w": 0.4044646428730166
+    }
+  }
+}

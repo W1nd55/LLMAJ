@@ -1,0 +1,123 @@
+{
+  "judge_a": "gemini",
+  "judge_b": "unisrm",
+  "shared_tts_models": [
+    "HumeAI",
+    "Qwen2.5-Omni-7B",
+    "Sesame1B",
+    "deepgram",
+    "eleven_multilingual_v2",
+    "gpt-4o-audio-preview-2024-12-17",
+    "gpt-4o-mini-tts",
+    "orpheus-tts-0.1-finetune-prod"
+  ],
+  "ranking_spearman_rho": 0.7619047619047621,
+  "ranking_spearman_p": 0.028004939153071805,
+  "ranking_kendall_w": 0.8809523809523809,
+  "per_model": {
+    "HumeAI": {
+      "n_common": 200,
+      "n_aligned": 199,
+      "winrate_a": 0.4296482412060301,
+      "winrate_b": 0.3869346733668342,
+      "winrate_diff": 0.04271356783919594,
+      "accuracy": 0.45226130653266333,
+      "cohen_kappa": 0.06705376344086011,
+      "weighted_kappa": -0.027810885975367627,
+      "pearson_r_other_score": 0.21881175784600113,
+      "pearson_r_baseline_score": 0.0470566790532757,
+      "kendall_w": 0.3815823435358611
+    },
+    "Qwen2.5-Omni-7B": {
+      "n_common": 200,
+      "n_aligned": 200,
+      "winrate_a": 0.2975,
+      "winrate_b": 0.265,
+      "winrate_diff": 0.03249999999999997,
+      "accuracy": 0.59,
+      "cohen_kappa": 0.16721677753516484,
+      "weighted_kappa": -0.07688653100007925,
+      "pearson_r_other_score": 0.526705605041336,
+      "pearson_r_baseline_score": -0.03159122780386567,
+      "kendall_w": 0.3065317257931448
+    },
+    "Sesame1B": {
+      "n_common": 200,
+      "n_aligned": 200,
+      "winrate_a": 0.15,
+      "winrate_b": 0.02,
+      "winrate_diff": 0.13,
+      "accuracy": 0.79,
+      "cohen_kappa": 0.041095890410958846,
+      "weighted_kappa": 0.0026595744680851796,
+      "pearson_r_other_score": 0.5331818255736556,
+      "pearson_r_baseline_score": -0.036320101156605375,
+      "kendall_w": 0.13887890947273682
+    },
+    "deepgram": {
+      "n_common": 200,
+      "n_aligned": 200,
+      "winrate_a": 0.3125,
+      "winrate_b": 0.23,
+      "winrate_diff": 0.08249999999999999,
+      "accuracy": 0.53,
+      "cohen_kappa": 0.043256997455470736,
+      "weighted_kappa": -0.02601389562126366,
+      "pearson_r_other_score": 0.27257486661439523,
+      "pearson_r_baseline_score": 0.08288693916251356,
+      "kendall_w": 0.31673929348233704
+    },
+    "eleven_multilingual_v2": {
+      "n_common": 200,
+      "n_aligned": 200,
+      "winrate_a": 0.3475,
+      "winrate_b": 0.18,
+      "winrate_diff": 0.16749999999999998,
+      "accuracy": 0.495,
+      "cohen_kappa": 0.009609727397528856,
+      "weighted_kappa": 0.04952076677316286,
+      "pearson_r_other_score": 0.08278814456585129,
+      "pearson_r_baseline_score": 0.22050913644763262,
+      "kendall_w": 0.3322230555763894
+    },
+    "gpt-4o-audio-preview-2024-12-17": {
+      "n_common": 200,
+      "n_aligned": 199,
+      "winrate_a": 0.6407035175879398,
+      "winrate_b": 0.4723618090452261,
+      "winrate_diff": 0.16834170854271363,
+      "accuracy": 0.4020100502512563,
+      "cohen_kappa": 0.01283921797490506,
+      "weighted_kappa": 0.016005945065309835,
+      "pearson_r_other_score": 0.03964682713484487,
+      "pearson_r_baseline_score": 0.13431762832601404,
+      "kendall_w": 0.39805638038678237
+    },
+    "gpt-4o-mini-tts": {
+      "n_common": 200,
+      "n_aligned": 200,
+      "winrate_a": 0.5725,
+      "winrate_b": 0.515,
+      "winrate_diff": 0.057499999999999996,
+      "accuracy": 0.375,
+      "cohen_kappa": 0.016251524810136475,
+      "weighted_kappa": 0.014336917562723928,
+      "pearson_r_other_score": 0.06736415243103286,
+      "pearson_r_baseline_score": 0.08679053515957522,
+      "kendall_w": 0.4133418960474012
+    },
+    "orpheus-tts-0.1-finetune-prod": {
+      "n_common": 200,
+      "n_aligned": 200,
+      "winrate_a": 0.3275,
+      "winrate_b": 0.075,
+      "winrate_diff": 0.2525,
+      "accuracy": 0.595,
+      "cohen_kappa": 0.09167367535744331,
+      "weighted_kappa": -0.01538461538461533,
+      "pearson_r_other_score": 0.39671952670725213,
+      "pearson_r_baseline_score": 0.05283563680441177,
+      "kendall_w": 0.24505700142503561
+    }
+  }
+}

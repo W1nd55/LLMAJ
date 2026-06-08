@@ -35,6 +35,10 @@ EmergentTTSEvalResults/
 EmergentTTS-Eval-public/data/
 EmergentTTS-Eval-public/results/
 
+# --- Local model weights (e.g. UniSRM, ~17 GB) ---
+# Anchored to repo root with leading "/" — must NOT match judges/models/ etc.
+/models/
+
 # --- Model checkpoints / weights ---
 *.ckpt
 *.pt
@@ -61,9 +65,15 @@ hf_cache/
 *.mov
 
 # --- Run outputs ---
-# Ignore everything under judges/results/* but keep the dir itself + .gitkeep
+# Ignore everything under judges/results/* (per-judge per-TTS predictions are huge / contain audio refs).
+# Whitelist only the comparison/ artifacts: textual reports + summary tables.
 judges/results/*
 !judges/results/.gitkeep
+!judges/results/comparison/
+judges/results/comparison/*
+!judges/results/comparison/*.md
+!judges/results/comparison/*.csv
+!judges/results/comparison/*.json
 output/
 outputs/
 tmp/

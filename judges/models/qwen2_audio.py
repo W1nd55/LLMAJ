@@ -37,11 +37,24 @@ class Qwen2AudioJudge(BaseJudge):
         from transformers import AutoProcessor, Qwen2AudioForConditionalGeneration
 
         self.processor = AutoProcessor.from_pretrained(self.model_path)
-        self.model = Qwen2AudioForConditionalGeneration.from_pretrained(
-            self.model_path,
+        load_kwargs = dict(
             torch_dtype=self._torch_dtype,
             device_map=self.device if self.device != "cuda" else "auto",
         )
+        try:
+            self.model = Qwen2AudioForConditionalGeneration.from_pretrained(
+                self.model_path,
+                attn_implementation="flash_attention_2",
+                **load_kwargs,
+            )
+            print("[qwen2-audio] loaded with flash_attention_2")
+        except (ImportError, ValueError, RuntimeError) as e:
+            print(f"[qwen2-audio] flash_attention_2 unavailable ({type(e).__name__}: {e}); falling back to sdpa")
+            self.model = Qwen2AudioForConditionalGeneration.from_pretrained(
+                self.model_path,
+                attn_implementation="sdpa",
+                **load_kwargs,
+            )
         self.model.eval()
 
     @property
@@ -142,4 +155,6 @@ class Qwen2AudioJudge(BaseJudge):
             output_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
         )[0]
 
+        del inputs, output_ids
+        torch.cuda.empty_cache()
         return response
